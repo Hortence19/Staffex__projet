@@ -1,24 +1,24 @@
-// const percent = document.querySelector('.percent')
-// const progress = document.querySelector('.progress')
-// let count = 0
-// const per =20
-// const totalInteration =5
-// const loading = setInterval(animate, 1000)
-// function animate(){
-//      if(count<totalInteration){
-//         count++;
-//         const CurrentPercent = count*per;
-//         progress.style.width = CurrentPercent + 'px';
-//         progress.style.backgroundColor = "white";  
-//         percent.textContent= CurrentPercent+'%'
-//     }else{
-//         clearInterval(loading);
-//         }
-//         setTimeout(()=>{
-//             window.location.href="http://127.0.0.1:5500/%20index1.html"
-//     },5000)
-//  }
-//     animate();
+const percent = document.querySelector('.percent')
+const progress = document.querySelector('.progress')
+let count = 0
+const per =20
+const totalInteration =5
+const loading = setInterval(animate, 1000)
+function animate(){
+   if(count<totalInteration){
+      count++;
+      const CurrentPercent = count*per;
+      progress.style.width = CurrentPercent + 'px';
+        progress.style.backgroundColor = "white";  
+        percent.textContent= CurrentPercent+'%'
+    }else{
+        clearInterval(loading);
+         }
+         setTimeout(()=>{
+             window.location.href="http://127.0.0.1:5500/%20index1.html"
+    },5000)
+ }    
+animate();
 const video1 = document.getElementById('video1');
 const video2 = document.getElementById('video2');
 video1.addEventListener('ended',function(){
